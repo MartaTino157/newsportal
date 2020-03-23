@@ -19,6 +19,7 @@
 		</li>
 		<li><a href="testError">Info</a></li>
 		<li><a href="./">Home</a></li>
+		<li><a href="registerForm">Registration</a></li>
 	</ul>
 </nav>
 
