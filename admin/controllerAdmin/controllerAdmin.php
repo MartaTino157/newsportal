@@ -6,6 +6,7 @@ class controllerAdmin {
 	//admin form
 	public static function loginAction() {
 		$logIn=modelAdmin::userAuthentication();
+		//echo $logIn;
 		if(isset($logIn) and $logIn==true) {
 			include_once('viewAdmin/startAdmin.php');
 		}
@@ -15,7 +16,7 @@ class controllerAdmin {
 		}
 	}
 	//выход из админ панели
-	public static function logOutAction() {
+	public static function logoutAction() {
 		modelAdmin::userLogout();
 		include_once('viewAdmin/formLogin.php');
 	}

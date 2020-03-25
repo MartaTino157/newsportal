@@ -10,7 +10,7 @@ class modelAdmin {
 				if(isset($_POST['email']) && isset($_POST['password']) && $_POST['email']!="" && $_POST['password'] !="") {
 					$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 					$password = filter_input(INPUT_POST, 'password' );
-					$sql='SELECT * FROM "users" WHERE "email" ="'.$email.'"';
+					$sql='SELECT * FROM `users` WHERE `email` ="'.$email.'"';
 					$db = new database();
 					$item = $db->getOne($sql);
 

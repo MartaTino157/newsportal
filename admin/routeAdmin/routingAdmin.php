@@ -15,6 +15,10 @@ elseif($path == 'logout') {
 	//edit
 	$response = controllerAdmin::logoutAction();
 }
+//------------------------- list news
+elseif($path=='newsAdmin') {
+	$response=controllerAdminNews::NewsList();
+}
 else {
 	//page is not exist
 	$response = controllerAdmin::error404();
